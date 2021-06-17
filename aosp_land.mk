@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
-#               2017-2018 The LineageOS Project
+#               2017-2018 The AospOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,8 +20,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common aosp stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from land device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -29,8 +29,15 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := land
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_land
+PRODUCT_NAME := aosp_land
 PRODUCT_MODEL := Redmi 3S
+
+# Official Stuff
+CUSTOM_BUILD_TYPE=OFFICIAL
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ACORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_FACE_UNLOCK_SUPPORTED = true
 
 TARGET_BOOT_ANIMATION_RES := 720
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

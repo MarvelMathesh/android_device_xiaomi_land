@@ -19,7 +19,7 @@ LOCAL_PATH := device/xiaomi/land
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-aosp
 
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
@@ -539,3 +539,12 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 # Always preopt extracted APKs to prevent extracting out of the APK
 # for gms modules.
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
+
+# Hardware
+PRODUCT_BOARD_PLATFORM := msm8937
+PRODUCT_USES_QCOM_HARDWARE := true
+
+# HALS
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8996/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8996/display
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8996/media

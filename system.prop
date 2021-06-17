@@ -32,3 +32,10 @@ dalvik.vm.dex2oat-threads=8
 dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 
 dalvik.vm.image-dex2oat-filter=everything
 dalvik.vm.image-dex2oat-threads=8
+
+# PixelPlusUI OFFICIAL
+ro.ppui.device_name=Redmi 3s/3x
+ro.ppui.version=3.6
+ro.ppui.version_code=Unicorn
+ro.ppui.is_official=true 
+ro.ppui.maintainer_name=Mathesh
