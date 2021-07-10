@@ -35,7 +35,7 @@ dalvik.vm.image-dex2oat-threads=8
 
 # PixelPlusUI OFFICIAL
 ro.ppui.device_name=Redmi 3s/3x
-ro.ppui.version=3.6
-ro.ppui.version_code=Unicorn
+ro.ppui.version=3.7
+ro.ppui.version_code=Ragnarok
 ro.ppui.is_official=true 
 ro.ppui.maintainer_name=Mathesh
